@@ -1,0 +1,44 @@
+.pipeline-container {
+  margin: 1.5rem 0;
+  width: 50%;
+  border: 1.5px solid #f1f3f7;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  &__head {
+    @include flex(flex, space-between, center);
+    font-weight: 600;
+    padding: 1rem;
+  }
+  &__body {
+    li {
+        p{
+            width: 24%;
+        }
+      border-top: 1.5px solid #f1f3f7;
+      padding: 1rem;
+      @include flex(flex, space-between, center);
+      color: $pale-color;
+      font-size: 0.8rem;
+      .pipeline-wrapper {
+        @include flex(flex, flex-start, center);
+        gap: 1rem;
+        width: 55%;
+        .pipeline {
+          background-color: #0056cf;
+          height: 0.3rem;
+          border-radius: 0.5rem;
+        }
+      }
+      .amount{
+        color: black;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .pipeline-container{
+    width: 100%;
+}
+}

@@ -1,0 +1,12 @@
+@mixin flex($flex,$justify,$align){
+    display:$flex;
+    justify-content:$justify;
+    align-items:$align
+
+}
+@mixin pale-bold-font{
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $pale-color;
+}

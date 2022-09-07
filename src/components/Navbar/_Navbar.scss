@@ -1,0 +1,26 @@
+.navbar {
+  padding: 0 12%;
+  border-bottom: 2px solid #f1f3f7;
+  background-color: #fff;
+  ul {
+    @include flex(flex, flex-start, center);
+    li {
+      padding: 1rem;
+      border-bottom: 2px solid #f1f3f7;
+    }
+    li:hover{
+        cursor: pointer;
+      }
+    li.clicked{
+        border-bottom: 2px solid $blue;
+        font-weight: 600;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  ul{
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,47 @@
+@import "mixins.scss";
+@import "variables.scss";
+@import "./components/Header/Header.scss";
+@import "./components/Navbar/Navbar.scss";
+@import "./components/Chart/Chart.scss";
+@import "./components/Tickets/Tickets.scss";
+@import "./components/Pipeline/Pipeline.scss";
+@import "./components/Info/Info.scss";
+@import "./pages/Dashboard/Dashboard.scss";
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ol,
+ul {
+  list-style: none;
+}
+a{
+  color: inherit;
+  text-decoration: inherit;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.App {
+  background-color: #f3f7fb;
+ 
+}
+button{
+  border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+}

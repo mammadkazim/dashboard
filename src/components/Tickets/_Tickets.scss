@@ -1,0 +1,57 @@
+.tickets {
+  h5 {
+    padding: 1rem 0 0.6rem;
+    @include pale-bold-font;
+    text-align: center;
+  }
+  .container {
+    @include flex(flex, center, flex-start);
+    gap: 1rem;
+    .column {
+      background-color: #fff;
+      border-radius: 0.5rem;
+      border: 1.5px solid #f1f3f7;
+      .heading {
+        @include pale-bold-font;
+        @include flex(flex, space-between, center);
+        padding: 1rem 0.8rem;
+        gap: 1rem;
+        .count {
+          @include flex(flex, center, center);
+          width: 0.8rem;
+          padding: 0.3rem;
+          border-radius: 50%;
+        }
+      }
+      ul {
+        li {
+          @include flex(flex, space-between, center);
+          border-top: 1.5px solid #f1f3f7;
+          padding: 0.7rem;
+          div {
+            @include flex(flex, space-between, center);
+            .avatar {
+              width: 1.5rem;
+              border-radius: 50%;
+              margin-right: 0.3rem;
+            }
+          }
+          .arrow {
+            width: 1rem;
+          }
+        }
+      }
+      button {
+        width: 100%;
+        border-top: 1.5px solid #f1f3f7;
+        padding: 0.7rem;
+        color: $blue;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 900px) {
+  .container{
+    flex-wrap: wrap;
+}
+}

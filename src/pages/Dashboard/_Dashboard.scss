@@ -1,0 +1,22 @@
+.dashboard {
+  padding: 1.5rem 12% 1rem;
+  h5 {
+    margin-bottom: 0.3rem;
+    @include pale-bold-font;
+  }
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  section{
+    @include flex(flex,center,center);
+    gap: 1.5rem;
+  }
+
+}
+
+@media only screen and (max-width: 900px) {
+  section{
+      flex-direction: column;
+  }
+}

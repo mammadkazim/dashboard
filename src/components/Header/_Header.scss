@@ -1,0 +1,58 @@
+.header {
+    padding: 0 12%;
+    border-bottom: 2px solid #F1F3F7;
+    @include flex(flex, space-between, center);
+    background-color: #fff;
+    &__left {
+      @include flex(flex, space-between, center);
+      .hamburger-icon {
+        width: 2.3rem;
+        margin:0 1rem;
+      }
+      .logo__upper {
+        font-size: 1.5rem;
+      }
+      .logo__lower {
+        color: $pale-color;
+        font-size: 0.8rem;
+      }
+    }
+    &__right {
+      @include flex(flex, space-between, center);
+      gap:2.5rem;
+      .notification-icon,.message-icon{
+        width: 1rem;
+      }
+      .notifications,.messages{
+        @include flex(flex, center, center);
+      }
+      .notification-count,.message-count{
+        @include flex(flex, center, center);
+        width: 1.2rem;
+        height: 1.2rem;
+        border-radius: 20%;
+        margin-left: 5px;
+        color:$blue;
+        font-weight: 600;
+        background-color: #E5EEFB;
+      }
+      .user {
+        font-size: 1rem;
+        font-weight: 600;
+        @include flex(flex, center, center);
+        &-icon {
+          width: 3rem;
+        }
+      }
+      .arrow-icon {
+        width: 1rem;
+        background-color: #fff;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .logo,.user__name{
+      display: none;
+    }
+  }

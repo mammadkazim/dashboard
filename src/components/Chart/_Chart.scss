@@ -1,0 +1,62 @@
+.chart {
+    border: 1.5px solid #f1f3f7;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    &__head {
+      border-bottom: 1.5px solid #f1f3f7;
+      @include flex(flex, space-between, center);
+      font-weight: 600;
+      padding: 0.5rem;
+      .ellipsis {
+        width: 2rem;
+        height: 2rem;
+        @include flex(flex, center, center);
+        background-color: #f1f3f7;
+        border-radius: 50%;
+        img {
+          width: 1rem;
+        }
+      }
+    }
+    &__body {
+      @include flex(flex, space-between, center);
+      .left-side {
+        width: 30%;
+        ul {
+          border-right: 1.5px solid #f1f3f7;
+
+          display: flex;
+          flex-direction: column;
+        }
+        li:hover {
+          color: $blue;
+          cursor: pointer;
+        }
+        li.clicked {
+          border-left: 2px solid $blue;
+          color: $blue;
+        }
+        li {
+          border-bottom: 1.5px solid #f1f3f7;
+          padding: 1.2rem 0.3rem 1.2rem 1.2rem;
+          @include flex(flex, space-between, center);
+          font-weight: 600;
+          img {
+            display: inline;
+            height: 1rem;
+            margin-right: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+
+
+  @media only screen and (max-width: 900px) {
+    .chart__body {
+      flex-direction: column;
+      .left-side {
+        width: 100%;
+      }
+    }
+  }
