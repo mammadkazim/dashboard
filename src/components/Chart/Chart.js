@@ -23,60 +23,47 @@ export default function Chart() {
   const data = [
     {
       name: "5/1",
-      pv: 48000,
+      pv: 48,
     },
     {
       name: "5/15",
-      pv: 58000,
+      pv: 58,
     },
     {
       name: "6/1",
-      pv: 65000,
+      pv: 65,
     },
     {
       name: "6/15",
-      pv: 70000,
+      pv: 70,
     },
     {
       name: "7/1",
-      pv: 80000,
+      pv: 80,
     },
     {
       name: "7/15",
-      pv: 85000,
+      pv: 85,
     },
     {
       name: "8/1",
-      pv: 90000,
+      pv: 90,
     },
     {
       name: "8/15 ",
-      pv: 100000,
+      pv: 100,
     },
     {
       name: "9/1 ",
-      pv: 125000,
+      pv: 125,
     },
     {
       name: "9/15 ",
-      pv: 145000,
-      amt: 2100,
+      pv: 145,
     },
     {
       name: "10/1 ",
-      pv: 157000,
-    },
-    {
-      name: "10/15 ",
-      pv: 170000,
-    },
-    {
-      name: "11/1 ",
-      pv: 188000,
-    },
-    {
-      name: "11/15 ",
-      pv: 210000,
+      pv: 157,
     }
   ]
 
@@ -122,7 +109,7 @@ export default function Chart() {
         <div className="right-side">
           <LineChart
             height={300}
-            width={600}
+            width={700}
             data={data}
             margin={{
               top: 5,

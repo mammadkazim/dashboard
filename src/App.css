@@ -155,12 +155,17 @@
   margin-right: 0.5rem;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 950px) {
   .chart__body {
     flex-direction: column;
   }
   .chart__body .left-side {
-    width: 100%;
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .right-side {
+    display: none;
   }
 }
 .tickets h5 {
@@ -351,9 +356,12 @@
   gap: 1.5rem;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1050px) {
   section {
     flex-direction: column;
+  }
+  .dashboard {
+    padding: 1.5rem 2rem 1rem;
   }
 }
 * {

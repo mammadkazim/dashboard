@@ -15,8 +15,11 @@
 
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1050px) {
   section{
       flex-direction: column;
+  }
+  .dashboard{
+    padding: 1.5rem 2rem 1rem;
   }
 }
